@@ -16,5 +16,5 @@ export const getById = async (args) =>{
 export const create = async (args) => {
     const db = new Database(args.datatable);
     const res: any = await db.insert(mySQLConnector,args.data);
-    return res[0];
+    return res[0]; 
 }
