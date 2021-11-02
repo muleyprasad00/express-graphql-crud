@@ -1,28 +1,21 @@
 {
-  "name": "simple-crud-app",
+  "name": "graphql-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "User consolidation apis",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./dist/server.ts",
-    "dev": "nodemon ./src/server.ts",
-    "build": "tsc -p ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^3.4.0",
-    "apollo-server-express": "^3.4.0",
+    "apollo-server-express": "^2.8.1",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-graphql": "^0.12.0",
-    "graphql": "^15.6.1",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.13",
-    "ts-node": "^10.3.0",
-    "typescript": "^4.4.4"
-  },
-  "devDependencies": {
-    "@types/mysql": "^2.15.19"
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.4.2",
+    "mongodb": "^3.3.0-beta2",
+    "mysql": "^2.17.1"
   }
 }
