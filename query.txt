@@ -1,0 +1,65 @@
+
+get
+
+query getData($queryInput:QueryInput){
+    getData(queryInput:$queryInput){
+        data
+    }
+}
+
+varibales =
+
+{
+    "queryInput":{
+    "datatable":"users",
+    "columns":[
+        "id",
+        "name"
+    ]    
+    }
+}
+==========================================
+
+
+update 
+
+mutation updateData($queryInput:QueryInput){
+    updateData(queryInput:$queryInput){
+        data
+    }
+}
+
+varibales =
+
+{
+    "queryInput":{
+    "datatable":"users",
+    "id":"1",
+    "data":"{\"firstName\":\"PM\",\n\"email\":\"PM\"\n}"
+    }
+}
+
+======================================
+
+insert 
+
+mutation createData($queryInput:QueryInput){
+    createData(queryInput:$queryInput){
+        data
+    }
+}
+
+varibales =
+
+{
+    "queryInput":{
+    "datatable":"users",
+    "data":"{\n\"name\":\"Vaibhav\",\n\"address\":\"Jalna\",\n\"city\":\"Jalna\",\n\"mobile\":\"8275231881\",\n\"email\":\"VM@gamil1.com\"\n}"
+    }
+}
+
+
+=============================
+
+delete
+
