@@ -100,7 +100,7 @@ async function deleteData (args,req){
 }
 
 
-//==========
+//db config
 app.use((req, res, next) => {
   req.mysqlDb = mysql.createConnection({
     host     : 'localhost',
