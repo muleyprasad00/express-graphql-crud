@@ -34,8 +34,10 @@ const queryDB = (req, sql, args) => new Promise((resolve, reject) => {
   console.log("args: ",args);
 
     req.mysqlDb.query(sql, args, (err, rows) => {
-        if (err)
-            return reject(err);
+        if (err){
+          return reject(err);
+        }
+        req.mysqlDb.end();
         rows.changedRows || rows.affectedRows || rows.insertId ? resolve(rows) : resolve(rows);
     });
 });
